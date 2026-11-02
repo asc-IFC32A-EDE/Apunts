@@ -16,5 +16,27 @@
         <li><b>Botons (button type="submit")</b>: Per enviar el formulari.</li>
         <li><b>Validació</b>: Mitjançant atributs com required (camp obligatori) i pattern (validació amb expressions regulars).</li>
     </ul>
+
+    <p>Exemple de formulari:</p>
+    <form action="/submit" method="post">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" placeholder="Introdueix el teu nom" required><br><br>
+
+        <label for="email">Correu electrònic:</label>
+        <input type="email" id="email" name="email" placeholder="Introdueix el teu correu" required><br><br>
+
+        <label for="message">Missatge:</label>
+        <textarea id="message" name="message"></textarea><br><br>
+        
+
+        <label for="gender">Gènere:</label>
+        <select id="gender" name="gender">
+            <option value="male">Home</option>
+            <option value="female">Dona</option>
+            <option value="other">Altres</option>
+        </select><br>
+
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>
